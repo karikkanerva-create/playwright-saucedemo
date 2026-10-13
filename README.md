@@ -33,6 +33,7 @@ playwright-saucedemo/
 ├── .gitignore
 ├── package.json
 ├── playwright.config.ts
+├── playwright.service.config.ts
 ├── README.md
 ├── playwright-report/
 ├── test-results/
@@ -90,6 +91,23 @@ npx playwright test tests/ui
 ```bash
 npx playwright test tests/api
 ```
+
+## Run Tests with Azure Playwright Workspaces
+
+Set `PLAYWRIGHT_SERVICE_URL` to the browser endpoint shown on your Azure Playwright Workspaces resource's **Get Started** page. You can store it in the ignored `.env` file alongside `playwright.config.ts`:
+
+```text
+PLAYWRIGHT_SERVICE_URL=<your Azure browser endpoint>
+```
+
+Sign in to the Azure tenant that contains the workspace, then run the tests with the service configuration:
+
+```bash
+az login
+npx playwright test --config=playwright.service.config.ts
+```
+
+The service configuration uses Microsoft Entra ID credentials from Azure CLI. Azure Playwright Workspaces usage may incur charges.
 
 ## View Test Report
 
