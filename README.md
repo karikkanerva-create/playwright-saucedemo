@@ -19,6 +19,12 @@ playwright-saucedemo/
 ├── node_modules/
 ├── tests/
 │   ├── api/
+│   │   ├── api-create-user.spec.ts
+│   │   ├── api-user-data.spec.ts
+│   │   ├── api-user-delete.spec.ts
+│   │   ├── api-user-list.spec.ts
+│   │   ├── api-user-not-found.spec.ts
+│   │   ├── api-user-update.spec.ts
 │   │   └── api.spec.ts
 │   ├── pages/
 │   │   ├── CartPage.ts
@@ -56,6 +62,11 @@ playwright-saucedemo/
 - Verify response body content
 - Verify total user count
 - Verify user information
+- Create and update a user
+- Delete a user
+- Verify missing users return 404
+
+API tests run once in the dedicated `api` project. UI tests run in Chromium, Firefox, and WebKit.
 
 ## Skills Demonstrated
 
@@ -77,19 +88,19 @@ npm install
 ## Run All Tests
 
 ```bash
-npx playwright test
+npm test
 ```
 
 ## Run UI Tests
 
 ```bash
-npx playwright test tests/ui
+npm run test:ui
 ```
 
 ## Run API Tests
 
 ```bash
-npx playwright test tests/api
+npm run test:api
 ```
 
 ## Run Tests with Azure Playwright Workspaces
@@ -112,7 +123,7 @@ The service configuration uses Microsoft Entra ID credentials from Azure CLI. Az
 ## View Test Report
 
 ```bash
-npx playwright show-report
+npm run report
 ```
 
 ## Author
