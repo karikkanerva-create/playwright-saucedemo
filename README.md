@@ -68,6 +68,10 @@ playwright-saucedemo/
 
 API tests run once in the dedicated `api` project. UI tests run in Chromium, Firefox, and WebKit.
 
+## Continuous Integration
+
+GitHub Actions automatically runs the Playwright test suite on every push and pull request targeting the `main` or `master` branch.
+
 ## Skills Demonstrated
 
 - Playwright
