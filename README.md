@@ -72,6 +72,10 @@ API tests run once in the dedicated `api` project. UI tests run in Chromium, Fir
 
 GitHub Actions automatically runs the Playwright test suite on every push and pull request targeting the `main` or `master` branch.
 
+## Latest Test Report
+
+The [Playwright HTML report](./playwright-report/index.html) records the latest test run: 28 tests passed and 4 API tests failed because ReqRes had reached its anonymous daily request limit and returned HTTP 429. The API failures are caused by the external service limit.
+
 ## Skills Demonstrated
 
 - Playwright
