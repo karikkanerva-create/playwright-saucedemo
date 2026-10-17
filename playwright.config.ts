@@ -2,9 +2,12 @@ declare const process: {
   loadEnvFile(): void;
   env: Record<string, string | undefined>;
 };
+import { existsSync } from 'node:fs';
 import { defineConfig, devices } from '@playwright/test';
 
-process.loadEnvFile();
+if (existsSync('.env')) {
+  process.loadEnvFile();
+}
 
 /**
  * See https://playwright.dev/docs/test-configuration.
