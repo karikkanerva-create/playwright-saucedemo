@@ -38,19 +38,19 @@ export default defineConfig({
     {
       name: 'chromium',
       testMatch: '**/ui/**/*.spec.ts',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'], screenshot: 'on' },
     },
 
     {
       name: 'firefox',
       testMatch: '**/ui/**/*.spec.ts',
-      use: { ...devices['Desktop Firefox'] },
+      use: { ...devices['Desktop Firefox'], screenshot: 'on' },
     },
 
     {
       name: 'webkit',
       testMatch: '**/ui/**/*.spec.ts',
-      use: { ...devices['Desktop Safari'] },
+      use: { ...devices['Desktop Safari'], screenshot: 'on' },
     },
 
     {

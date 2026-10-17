@@ -17,6 +17,7 @@ playwright-saucedemo/
 ├── .github/
 ├── .vscode/
 ├── doc/
+│   ├── screenshots/
 │   └── test-cases.md
 ├── node_modules/
 ├── tests/
@@ -71,6 +72,7 @@ playwright-saucedemo/
 API tests run once in the dedicated `api` project. UI tests run in Chromium, Firefox, and WebKit.
 
 See [doc/test-cases.md](./doc/test-cases.md) for the documented UI and API test cases.
+UI test screenshots are saved to [doc/screenshots](./doc/screenshots) on every run.
 
 ## Continuous Integration
 

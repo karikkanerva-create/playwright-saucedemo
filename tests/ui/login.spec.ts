@@ -1,5 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
+import { saveTestScreenshot } from './screenshot';
+
+test.afterEach(async ({ page }, testInfo) => {
+  await saveTestScreenshot(page, testInfo);
+});
 
 test('Test Login successful', async ({ page }) => {
   const loginPage = new LoginPage(page);
