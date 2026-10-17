@@ -16,6 +16,8 @@ This project demonstrates UI and API test automation using Playwright and TypeSc
 playwright-saucedemo/
 ├── .github/
 ├── .vscode/
+├── doc/
+│   └── test-cases.md
 ├── node_modules/
 ├── tests/
 │   ├── api/
@@ -67,6 +69,8 @@ playwright-saucedemo/
 - Verify missing users return 404
 
 API tests run once in the dedicated `api` project. UI tests run in Chromium, Firefox, and WebKit.
+
+See [doc/test-cases.md](./doc/test-cases.md) for the documented UI and API test cases.
 
 ## Continuous Integration
 
