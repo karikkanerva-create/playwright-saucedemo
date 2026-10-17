@@ -128,6 +128,8 @@ npm run report
 
 ## Author
 
-Kari
-
-Learning Playwright, GitHub and Azure App Testing.
+- **Kari Kanerva**
+- Bachelor of Computer Science
+- ISTQB Foundation Level Tester CTFL 4.0
+- ISTQB Foundation Agile Tester
+[kari.k.kanerva@gmail.com](mailto:kari.k.kanerva@gmail.com)

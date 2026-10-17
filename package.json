@@ -10,7 +10,7 @@
     "report": "playwright show-report"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kari Kanerva <kari.k.kanerva@gmail.com>",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
