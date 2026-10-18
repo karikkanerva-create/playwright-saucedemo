@@ -121,6 +121,14 @@ npm run test:ui
 npm run test:api
 ```
 
+## Check TypeScript
+
+```bash
+npm run typecheck
+```
+
+This runs the strict TypeScript compiler check without emitting JavaScript.
+
 ## Run Tests with Azure Playwright Workspaces
 
 Set `PLAYWRIGHT_SERVICE_URL` to the browser endpoint shown on your Azure Playwright Workspaces resource's **Get Started** page. You can store it in the ignored `.env` file alongside `playwright.config.ts`:
