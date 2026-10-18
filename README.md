@@ -84,7 +84,7 @@ GitHub Actions automatically runs the Playwright test suite on every push and pu
 
 ## Latest Test Report
 
-The [Playwright HTML report](./playwright-report/azure/index.html) records the latest Azure Playwright Workspaces run: all 32 tests passed across Chromium, Firefox, WebKit, and the API project.
+The [Playwright HTML report](./playwright-report/azure/index.html) records the latest Azure Playwright Workspaces run: all 32 tests passed across Chromium, Firefox, WebKit, and the API project. Local and Azure HTML reports and test artifacts are retained in the repository under their respective `playwright-report` and `test-results` directories.
 
 ## Skills Demonstrated
 
