@@ -16,9 +16,6 @@ This project demonstrates UI and API test automation using Playwright and TypeSc
 playwright-saucedemo/
 ├── .github/
 ├── .vscode/
-├── doc/
-│   ├── screenshots/
-│   └── test-cases.md
 ├── node_modules/
 ├── tests/
 │   ├── api/
@@ -40,6 +37,7 @@ playwright-saucedemo/
 │       ├── inventory.spec.ts
 │       └── login.spec.ts
 ├── .gitignore
+├── TEST-CASES.md
 ├── package.json
 ├── playwright.config.ts
 ├── playwright.service.config.ts
@@ -75,8 +73,7 @@ playwright-saucedemo/
 
 API tests run once in the dedicated `api` project. UI tests run in Chromium, Firefox, and WebKit.
 
-See [doc/test-cases.md](./doc/test-cases.md) for the documented UI and API test cases.
-UI test screenshots are saved to [doc/screenshots](./doc/screenshots) on every run.
+See [TEST-CASES.md](./TEST-CASES.md) for the documented UI and API test cases. Playwright stores screenshots and other per-test artifacts in `test-results/local` or `test-results/azure`, and includes them in the corresponding HTML report.
 
 ## Continuous Integration
 

@@ -2,11 +2,6 @@ import { expect, test } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 import { InventoryPage } from '../pages/InventoryPage';
 import { CartPage } from '../pages/CartPage';
-import { saveTestScreenshot } from './screenshot';
-
-test.afterEach(async ({ page }, testInfo) => {
-  await saveTestScreenshot(page, testInfo);
-});
 
 test('Add backpack and verify cart', async ({ page }) => {
   const loginPage = new LoginPage(page);

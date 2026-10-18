@@ -3,13 +3,7 @@ import { LoginPage } from '../pages/LoginPage';
 import { InventoryPage } from '../pages/InventoryPage';
 import { CartPage } from '../pages/CartPage';
 import { CheckoutPage } from '../pages/CheckoutPage';
-import { saveTestScreenshot } from './screenshot';
 
-
-
-test.afterEach(async ({ page }, testInfo) => {
-  await saveTestScreenshot(page, testInfo);
-});
 
 test('Complete checkout process', async ({ page }) => {
 
