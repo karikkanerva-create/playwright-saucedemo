@@ -80,7 +80,7 @@ GitHub Actions automatically runs the Playwright test suite on every push and pu
 
 ## Latest Test Report
 
-The [Playwright HTML report](./playwright-report/index.html) records the latest Azure Playwright Workspaces run: all 24 UI tests passed, while all 8 API tests failed because ReqRes had reached its anonymous daily request limit and returned HTTP 429. The API failures are caused by the external service limit.
+The [Playwright HTML report](./playwright-report/index.html) records the latest Azure Playwright Workspaces run: all 32 tests passed across Chromium, Firefox, WebKit, and the API project.
 
 ## Skills Demonstrated
 
