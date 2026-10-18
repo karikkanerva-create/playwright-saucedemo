@@ -45,7 +45,11 @@ playwright-saucedemo/
 ├── playwright.service.config.ts
 ├── README.md
 ├── playwright-report/
+│   ├── azure/
+│   └── local/
 ├── test-results/
+│   ├── azure/
+│   └── local/
 └── package-lock.json
 ```
 
@@ -80,7 +84,7 @@ GitHub Actions automatically runs the Playwright test suite on every push and pu
 
 ## Latest Test Report
 
-The [Playwright HTML report](./playwright-report/index.html) records the latest Azure Playwright Workspaces run: all 32 tests passed across Chromium, Firefox, WebKit, and the API project.
+The [Playwright HTML report](./playwright-report/azure/index.html) records the latest Azure Playwright Workspaces run: all 32 tests passed across Chromium, Firefox, WebKit, and the API project.
 
 ## Skills Demonstrated
 
@@ -132,12 +136,20 @@ az login
 npx playwright test --config=playwright.service.config.ts
 ```
 
-The service configuration uses Microsoft Entra ID credentials from Azure CLI. Azure Playwright Workspaces usage may incur charges.
+The service configuration uses Microsoft Entra ID credentials from Azure CLI. Azure test artifacts are saved under `test-results/azure`, and the HTML report is saved under `playwright-report/azure`. Azure Playwright Workspaces usage may incur charges.
+
+Local test artifacts are saved under `test-results/local`, and the HTML report is saved under `playwright-report/local`.
 
 ## View Test Report
 
 ```bash
 npm run report
+```
+
+Open the latest local HTML report with:
+
+```bash
+npm run report:local
 ```
 
 ## Author

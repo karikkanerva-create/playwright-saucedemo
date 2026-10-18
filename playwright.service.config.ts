@@ -15,4 +15,8 @@ export default defineConfig(
     os: ServiceOS.LINUX,
     credential: new DefaultAzureCredential(),
   }),
+  {
+    outputDir: 'test-results/azure',
+    reporter: [['html', { outputFolder: 'playwright-report/azure' }]],
+  },
 );
